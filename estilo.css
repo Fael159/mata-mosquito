@@ -17,12 +17,24 @@ body {
 
 
 .containerfim {
-	margin-top: 200px;
+	margin-bottom: 300px;
 	color: #fff;
 }
 
 .centraliza {
-	padding-top: 600px;
+	padding-top: 650px;
+}
+
+.centraliza1 {
+	margin-top: 300px;
+}
+
+.centraliza2 {
+	margin-top: 825px;
+}
+
+.centraliza3 {
+	margin-top: 150px;
 }
 
 
