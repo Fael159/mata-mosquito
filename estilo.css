@@ -8,12 +8,23 @@ html {
 /* Imagem de fundo */
 
 body {
-	background: url(imagens/bg.jpg);
+	background: url(imagens/bg.jpg) center;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-color: #000;
 
 
 }
+
+
+.containerfim {
+	margin-top: 200px;
+	color: #fff;
+}
+
+.centraliza {
+	padding-top: 600px;
+}
+
 
 
 /* Editar img mosquito */
@@ -53,20 +64,157 @@ body {
 	bottom: 0px;
 	border-top: solid 1px #fff;
 	background-color: #fff;
-	opacity: 0.7;
+	opacity: 0.9;
+	padding-top: 0px;
 }
-
 
 .vidas {
 	float: left;
 }
-
 
 .cronometro {
 	float: left;
 	font-size: 20px;
 	font-weight: bold;
 }
+
+
+
+.logo {
+	margin-top: 25px;
+}
+
+
+.venceu {
+   	
+}
+
+
+.gameover {
+	margin-top: 25px;
+}
+
+
+
+/* Fases */
+
+.fase {
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.senario2 {
+	background: url(imagens/cidade.jpg) center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: #000;
+}
+
+.senario3 {
+	background: url(imagens/fazenda.jpg) center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: #000;
+}
+
+.senario4 {
+	background: url(imagens/praia.jpg) center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: #000;
+}
+
+
+		
+		@media (max-width: 299.98px){
+			img.logo {
+            	width: 230px;
+            	margin-top: 50px;
+            }
+
+            img.venceu {
+            	width: 230px;
+            	margin-top: 80px;
+            }
+
+            img.gameover {
+            	width: 230px;
+            	margin-top: 80px;
+            }
+		}
+
+
+		@media (min-width: 300px) and (max-width: 459.98px){
+			img.logo {
+            	width: 300px;
+            	margin-top: 50px;
+            }
+
+            img.venceu {
+            	width: 300px;
+            	margin-top: 80px;
+            }
+
+            img.gameover {
+            	width: 300px;
+            	margin-top: 80px;
+            }
+		}
+
+        /* Extra small devices (portrait phones, less than 576px)*/
+        @media (min-width: 460px) and (max-width: 575.98px) {
+            img.logo {
+            	width: 350px;
+            	margin-top: 50px;
+            }
+
+            img.venceu {
+            	width: 350px;
+            	margin-top: 80px;
+            }
+
+            img.gameover {
+            	width: 350px;
+            	margin-top: 80px;
+            }
+        }
+
+        /* Small devices (landscape phones, 576px and up)*/
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            img.logo {
+            	width: 400px;
+            	margin-top: 50px;
+            }
+
+            img.venceu {
+            	width: 400px;
+            	margin-top: 80px;
+            }
+
+            img.gameover {
+            	width: 400px;
+            	margin-top: 80px;
+            }
+
+
+        }
+
+        /* Medium devices (tablets, 768px and up)*/
+        @media (min-width: 768px) and (max-width: 991.98px) {
+
+            
+        }
+
+        /* Large devices (desktops, 992px and up)*/
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+           
+        }
+
+        /* Extra large devices (large desktops, 1200px and up)*/
+        @media (min-width: 1200px) {
+              
+        }
 
 
 

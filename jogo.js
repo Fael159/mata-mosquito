@@ -1,9 +1,17 @@
-// Recuperando tamanho da tela do jogo conforme é alterada
+
 
 var altura = 0 
 var largura = 0
 var	vidas = 1
 var tempo = 15
+var parabens = 1
+
+
+
+
+
+
+
 
 var criaMosquitoTempo = 1500
 
@@ -16,10 +24,13 @@ if (nivel === 'normal') {
 } else if(nivel === 'dificil') {
 	//1000
 	criaMosquitoTempo = 1000
-} else if (nivel === 'chucknorris') {
+} else if (nivel === 'impossivel') {
 	//750
 	criaMosquitoTempo = 750
 }
+
+
+// Recuperando tamanho da tela do jogo conforme é alterada
 
 function ajustaTamanhoPalcoJogo() {
 	altura = window.innerHeight
@@ -28,25 +39,50 @@ function ajustaTamanhoPalcoJogo() {
 	console.log(altura, largura)
 }
 
+
 ajustaTamanhoPalcoJogo()
 
 
-// Criando o Cronometo
+// Criando Cronometro
+	
+
 var cronometro = setInterval(function() {
 
 	tempo -= 1
 
-	if(tempo < 0) {
+	if(tempo < 0 && parabens === 1) {
+		
+		clearInterval(cronometro)
+		clearInterval(criaMosquito)
+		window.location.href = 'parabens.html'
+
+
+	} if(tempo < 0 && parabens === 2) {
+		
+		clearInterval(cronometro)
+		clearInterval(criaMosquito)
+		window.location.href = 'parabens2.html'
+
+	}if(tempo < 0 && parabens === 3) {
+		
+		clearInterval(cronometro)
+		clearInterval(criaMosquito)
+		window.location.href = 'parabens3.html'
+
+	}if(tempo < 0 && parabens === 4) {
+		
 		clearInterval(cronometro)
 		clearInterval(criaMosquito)
 		window.location.href = 'vitoria.html'
-
 	} else {
 		document.getElementById('cronometro').innerHTML = tempo
 
 	}
-	
+
 }, 1000)
+
+
+
 
 
 // Criando posição Randomica
@@ -130,3 +166,42 @@ function ladoAleatorio() {
 			return 'ladoB'
 	}
 }
+
+
+
+
+
+
+
+// Criando Fases
+
+/*
+	function fases() {
+
+
+
+	    var fase = window.location.search
+
+	    if (fase === 'fase1') {
+
+	    	var fase1 = document.createElement('img')
+	   		 fase1.src = 'imagens/1.png'
+
+	    } else if (fase === 'fase2') {
+
+	    	var fase2 = document.createElement('img')
+	    	fase2.src = 'imagens/2.png'
+
+	    } else if (fase === 'fase3') {
+
+	    	var fase3 = document.createElement('img')
+	    	fase3.src = 'imagens/3.png'
+
+	    } else  if (fase === 'fase4') {
+	    	var fase4 = document.createElement('img')
+	    fase4.src = 'imagens/4.png'
+	    }
+
+	}
+
+	*/

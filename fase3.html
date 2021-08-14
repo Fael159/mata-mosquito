@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Game Mata Mosca Fase 3</title>
+
+  <link rel="stylesheet" href="estilo.css">
+  <script src="jogo.js"></script>
+
+</head>
+
+<body class="centraliza senario3" onresize="ajustaTamanhoPalcoJogo()">
+
+  <div class="painel">
+
+    <p class="fase">Fase 3</p>
+
+    <div class="vidas">
+        <img id="v1" src="imagens/coracao_cheio.png">
+        <img id="v2" src="imagens/coracao_cheio.png">
+        <img id="v3" src="imagens/coracao_cheio.png">
+    </div>
+
+    <div class="cronometro">Tempo Restante: <span id="cronometro"></span></div>
+    
+  </div>
+
+
+  <script>
+
+      document.getElementById('cronometro').innerHTML = tempo
+
+      var criaMosquito = setInterval(function() {
+          posicaoRandomica()
+      }, criaMosquitoTempo)
+
+
+      parabens = 3
+
+
+  </script>
+
+</body>
+
+</html>

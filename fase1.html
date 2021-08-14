@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Game Mata Mosca Fase 1</title>
+
+  <link rel="stylesheet" href="estilo.css">
+  <script src="jogo.js"></script>
+
+</head>
+
+<body class="centraliza" onresize="ajustaTamanhoPalcoJogo()">
+
+  <div class="painel">
+
+    <p class="fase">Fase 1</p>
+
+    <div class="vidas">
+        <img id="v1" src="imagens/coracao_cheio.png">
+        <img id="v2" src="imagens/coracao_cheio.png">
+        <img id="v3" src="imagens/coracao_cheio.png">
+    </div>
+
+    <div class="cronometro">Tempo Restante: <span id="cronometro"></span></div>
+    
+  </div>
+
+
+  <script>
+
+    var inicio = setTimeout(function(){
+      var numero1 = document.createElement('img')
+      numero1.src ='imagens/1.png'
+    } )
+
+    clearTimeout(inicio)
+
+      document.getElementById('cronometro').innerHTML = tempo
+
+      var criaMosquito = setInterval(function() {
+          posicaoRandomica()
+      }, criaMosquitoTempo)
+
+
+  </script>
+
+</body>
+
+</html>
